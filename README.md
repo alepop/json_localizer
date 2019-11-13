@@ -1,4 +1,5 @@
 # [WIP] json_localizer
+[![codecov](https://codecov.io/gh/alepop/json_localizer/branch/master/graph/badge.svg)](https://codecov.io/gh/alepop/json_localizer)
 
 A Flutter package that provides localization for app with json files
 
