@@ -45,11 +45,11 @@ class JSONLocalizer {
     Map<String, dynamic> sentence = this._resolve(key, _sentences);
     String result =
         Function.apply(Intl.plural, [howMany], symbolizeKeys(sentence));
-    if (args != null) {
-      args.forEach((key, value) {
-        result = result.replaceFirst('\$$key', value.toString());
-      });
-    }
+    args ??= Map();
+    args['howMany'] = howMany;
+    args.forEach((key, value) {
+      result = result.replaceFirst('\$$key', value.toString());
+    });
     return result;
   }
 

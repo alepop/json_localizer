@@ -1,0 +1,9 @@
+{
+  "title": "Hello world",
+  "hello": "Hello $name",
+  "email": {
+    "zero": "There are no emails",
+    "one": "There is $howMany email for $userName",
+    "other": "There are $howMany emails"
+  }
+}
